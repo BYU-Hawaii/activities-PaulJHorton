@@ -1,0 +1,18 @@
+/* Changed header two to color bisque */
+h2 {
+  color: bisque;
+}
+/* used class name "highlight" to change background color of elements to yellow */
+.highlight {
+  background-color: yellow;
+}
+/* The main header has been set with a size and I made the font bold*/
+#mainHeader {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Sets the background color to the dark green shade */
+body {
+  background-color: #122e05;
+}
+/* this is a comment*/
