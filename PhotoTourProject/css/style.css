@@ -1,0 +1,146 @@
+header {
+  text-align: center;
+}
+
+/* Remove dots from nav list */
+nav ul {
+  list-style-type: none; /* no dots next to the links */
+  padding: 0; /* no extra space around the list */
+  margin: 0; /* no extra space between items in list */
+}
+
+/* Changes link style */
+nav a {
+  text-decoration: none; /* no underline for links */
+  color: black; /* link color is black */
+  padding: 10px 15px; /* some space around the text */
+  display: inline-block; /* links side by side */
+}
+
+/* Change link style when mouse is hovering */
+nav a:hover {
+  color: blue; /* link turns blue when mouse is hovering */
+  background-color: #f2f2f2; /* background color changes when mouse is hovered */
+}
+
+/* Add color behind the menu (nav bar) */
+nav {
+  background-color: #fd983f57; /* dark color for menu background */
+}
+
+/* change link color to look good with dark background */
+nav a {
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(0, 0, 0); /* link color is white */
+}
+
+/* Add space between links */
+nav li {
+  margin-right: 10px; /* space to the right of each menu link */
+}
+
+/* Puts the menu at the middle of page */
+nav ul {
+  text-align: center; /* menu links in the middle of the page */
+}
+
+/* Add borders around each link for more defintion */
+nav a {
+  border-right: 1px solid white; /* thin white line right of menu bar */
+}
+
+/* Increase space above and below links */
+nav a {
+  padding-top: 10px; /* Space above the link text */
+  padding-bottom: 10px; /* Space below the link text */
+}
+
+/* FIRST PAGE CSS */
+
+/* Background image */
+.homepage-body {
+  background-image: url('ocean.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Define custom bullet points */
+.custom-bullets {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 20px; /* Add some padding to the left for spacing */
+}
+
+.custom-bullets li {
+  padding-left: 30px;
+  margin-bottom: 5px;
+  background-image: url('bulletpoint.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-top: 5px;
+  font-size: x-large;
+}
+
+/* Main page paragraph text color and font adjustments */
+.main-paragraph {
+  font-size: x-large;
+  color: black;
+  background-color: #fd983f57;
+}
+
+/* Footer */
+.homepage-footer {
+  font-size: large;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* SECOND PAGE (LOS ANGELES) */
+.LosAngeles-body {
+  background-color: bisque;
+}
+
+/* image on los angeles page */
+.hollywood-caption {
+  text-align: center;
+}
+
+/* Ventura page */
+
+.ventura-body {
+  background-color: rgb(0, 162, 255);
+}
+
+.ventura-caption {
+  text-align: center;
+}
+
+/* Yosemite page */
+
+.yosemite-body {
+  background-color: green;
+}
+
+.yosemite-caption {
+  text-align: center;
+}
+
+/* fav foods page */
+
+.food {
+  text-align: left;
+}
+
+.food-page {
+  background-color: rgb(255, 0, 0);
+}
+
+.food-paragraph {
+  background-color: yellow; /* Background color to highlight the text */
+  color: black; /* Text color */
+  padding: 2px 4px; /* Optional: Add some padding to make the highlight more noticeable */
+  border-radius: 3px; /* Optional: Add rounded corners to the highlight */
+}
