@@ -1,0 +1,35 @@
+/* Ensure the navigation bar spans the entire width of the browser */
+nav {
+  width: 100%;
+  background-color: #333; /* Background color for the nav bar */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Remove default padding and list styling */
+nav ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Display list items in a horizontal line */
+}
+
+/* Style list items */
+nav ul li {
+  display: inline; /* Display list items inline */
+}
+
+/* Style links */
+nav ul li a {
+  display: inline-block; /* Make the link area clickable */
+  text-decoration: none; /* Remove underline */
+  font-family: Arial, sans-serif; /* Adjust font */
+  font-size: 16px; /* Adjust font size */
+  padding: 14px 20px; /* Add padding */
+  color: #fff; /* Set text color */
+}
+
+/* Hover effects for better user interaction */
+nav ul li a:hover {
+  background-color: #575757; /* Darker background on hover */
+  color: #fff; /* text color stays white */
+}
