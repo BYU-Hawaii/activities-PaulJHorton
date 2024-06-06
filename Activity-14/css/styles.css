@@ -1,0 +1,138 @@
+/* Basic reset and styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.main-content {
+  grid-area: main;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive grid layout */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      'header header'
+      'nav main'
+      'footer footer';
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Responsive Navigation Bar */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* Vertical Navigation for smaller screens */
+@media (max-width: 767px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Horizontal Navigation for larger screens */
+@media (min-width: 768px) {
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*Flexbox gallery */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-container img {
+  flex: 1 1 calc(100% - 10px);
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments for gallery */
+@media (min-width: 768px) {
+  .gallery-container img {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-container img {
+    flex: 1 1 calc(33.333% - 10px);
+  }
+}
+
+/* Adjusting the grid layout and gallery based on screen width */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .gallery-container img {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-container img {
+    flex: 1 1 calc(33.333% - 10px);
+  }
+}
