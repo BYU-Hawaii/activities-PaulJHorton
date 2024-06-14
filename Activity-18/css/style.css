@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+header h1,
+footer p {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.feedback {
+  color: red;
+  display: none;
+  margin-top: 5px;
+}
+
+.valid-feedback {
+  color: green;
+  display: none;
+  margin-top: 10px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  label {
+    margin-top: 10px;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for desktop view */
+@media (min-width: 769px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  label {
+    flex: 1;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  input {
+    flex: 2;
+  }
+}
