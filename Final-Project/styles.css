@@ -198,5 +198,32 @@ canvas {
 /* Image styling */
 #monster {
   float: right;
+  margin-top: 20px;
+}
+
+.doodle-drawings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adds space between the images and captions */
+  text-align: center; /* Centers the captions */
+}
+
+.doodle-drawings figure {
+  margin: 0;
+}
+
+.doodle-drawings img {
+  width: 50%;
+  height: auto; /* Ensures images maintain their aspect ratio */
+}
+
+.doodle-drawings figcaption {
+  margin-top: 5px; /* Adds space between the image and caption */
+  font-style: oblique;
+  font-size: 20px; /* Adjusts the font size of the caption */
+  color: #555; /* Sets the color of the caption text */
+}
+
+#fix-doodle {
   margin-top: 30px;
 }
